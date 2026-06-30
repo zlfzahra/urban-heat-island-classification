@@ -228,26 +228,23 @@ The results reveal
 urban-heat-island-classification/
 │
 ├── data/
+│   ├── ground_truth_combined.csv
+│   ├── ground_truth_pivot.csv
+│   ├── ground_truth_pivot_with_coordinates.csv
+│   ├── ground_truth_uhi_landsat.csv
+│   └── ground_truth_uhi_landsat_5class.csv
 │
 ├── gee/
-│   ├── 01_preprocessing.js
-│   ├── 02_temporal_matching.js
-│   ├── 03_feature_extraction.js
-│   ├── 04_export_dataset.js
-│   └── README.md
+│   ├── 01_landsat_feature_extraction.js
+│   └── 02_taipei_spatial_prediction_export.js
 │
 ├── notebooks/
-│   ├── 01_data_preprocessing.ipynb
-│   ├── 02_exploratory_analysis.ipynb
-│   ├── 03_dataset_preparation.ipynb
-│   ├── 04_machine_learning_models.ipynb
-│   └── 05_results_visualization.ipynb
+│   ├── 01_dataset_preparation.ipynb
+│   ├── 02_machine_learning_models.ipynb
+│   └── 03_results_visualization.ipynb
 │
-├── figures/
-│
-├── results/
-│
-├── requirements.txt
+├── model/
+│   └── Random_Forest_Original_best.pkl
 │
 └── README.md
 ```
